@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.axxesinternational.vias.axxes.ScaneoActivity">
+
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:id="@+id/CBB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/cbb"
+        android:onClick="onClickDetHerraje"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe el codigo del herraje"
+        android:id="@+id/input_codHerr"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_below="@id/CBB"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_dark"
+        android:layout_marginBottom="0dp"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/user_footer"
+            android:textColor="@color/text_footer"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/image_logo" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

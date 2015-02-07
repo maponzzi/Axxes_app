@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- title's -->
+    <string name="title_activity_levantamiento">LevantamientoActivity</string>
+    <string name="title_activity_detalle_plano">Detalle del Herraje</string>
+    <string name="title_activity_pendientes">PendientesActivity</string>
+    <string name="title_activity_nuevo_mantenimiento">Nuevo Mantenimiento</string>
+    <string name="title_activity_nuevo_levantamiento">NuevoLevantamientoActivity</string>
+    <!-- <string name="title_activity_scaneo">ScaneoActivity</string> -->
+    <!-- <string name="title_activity_detalle_herraje">DetalleHerrajeActivity</string> -->
+
+    <string name="app_name">Axxes International</string>
+    <string name="menu_settings">Configuracion</string>
+    <string name="menu_logout">Cerrar sesion</string>
+    <string name="app_giro">Mantenimiento</string>
+    <string name="user_footer">Alex</string>
+    <string name="copyright">Derechos Reservados Axxes Inc.</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- activity_levantamiento.xml -->
+    <string name="error_lectura_qr">Este QR Code no es un codigo válido de Axxes</string>
+    <string name="txt_btn_scan">Escanear</string>
+    <string name="txt_busq_manual">O ingresa el codigo del herraje:</string>
+    <string name="txt_pend">Pendientes</string>
+    <string name="txt_ult">Ultimo mantenimiento:</string>
+    <string name="txt_ubic">Ubicado:</string>
+    <string name="txt_stt">Status:</string>
+    <string name="txt_mantenimiento">Mantenimientos pendientes</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- activity_nuevo_levantamiento.xml -->
+    <string name="txt_observaciones">Observaciones Generales:</string>
+
+    <!-- button's -->
+    <string name="txt_nuevo_mantenimiento">Nuevo mantenimiento</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

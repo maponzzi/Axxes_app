@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.axxesinternational.vias.axxes.NuevoLevantamientoActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Herraje Modular Axxes No.50"
+        android:id="@+id/NomHerraje"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ult:  10-Oct-2014   		Estatus: 95%"
+        android:id="@+id/UltFecha"
+        android:layout_below="@+id/NomHerraje"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ubicado:  Cruce Principal # 320"
+        android:id="@+id/Ubicado"
+        android:layout_below="@+id/UltFecha"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ubicado"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/relativeLayout">
+
+        <Button
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:text="Componentes"
+            android:id="@+id/Componentes" />
+
+        <Button
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:text="Trabajadores"
+            android:id="@+id/Trabajadores"
+            android:layout_below="@+id/Componentes"/>
+
+        <Button
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:text="Fotos"
+            android:id="@+id/Fotos"
+            android:layout_toEndOf="@+id/Componentes"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:text="Requerimientos"
+            android:layout_below="@id/Fotos"
+            android:layout_toEndOf="@id/Trabajadores"
+            android:id="@+id/Requerimientos" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/txt_folio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/relativeLayout"
+        android:inputType="number"
+        android:hint="Folio" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/txt_observaciones"
+        android:id="@+id/textView5"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txt_folio"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/txt_observaciones_area"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:onClick="GuardarNuevo"
+        android:id="@+id/button3"
+        android:layout_below="@+id/txt_observaciones_area"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_dark"
+        android:layout_marginBottom="0dp"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/user_footer"
+            android:textColor="@color/text_footer"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/image_logo" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

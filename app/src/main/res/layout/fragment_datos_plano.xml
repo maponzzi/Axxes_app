@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.axxesinternational.vias.axxes.fragments.DatosPlanoFragment">
+
+
+    <ListView
+        android:id="@+id/my_list_view_plano"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:longClickable="false" />
+
+
+    <TextView
+        android:id="@+id/mantenimientos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_mantenimiento"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/accent"
+        android:layout_marginTop="15dp"/>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/primary"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Levantamientos"
+        android:id="@+id/titulo_col">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Folio"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/text_footer"
+            android:layout_marginStart="26dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro"
+            android:id="@+id/textView3"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textView2"
+            android:textColor="@color/text_footer"
+            android:layout_marginStart="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Observaciones"
+            android:id="@+id/textView4"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/text_footer"
+            android:layout_marginEnd="26dp" />
+
+
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/mant_abiertos_grid_view"
+        android:stretchMode="columnWidth"
+        android:cacheColorHint="#000000"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="1"
+        android:clipChildren="true"
+        android:horizontalSpacing="5dip"
+        android:verticalSpacing="5dip" />
+
+
+</LinearLayout>

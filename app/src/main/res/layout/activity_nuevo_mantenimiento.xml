@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.axxesinternational.vias.axxes.NuevoMantenimientoActivity">
+
+
+    <fragment
+        android:id="@+id/datos_plano_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.axxesinternational.vias.axxes.fragments.DatosPlanoNuevoMantFragment"
+        tools:layout="@layout/fragment_datos_plano_nuevo" />
+
+
+    <RelativeLayout
+        android:id="@+id/area_nuevo_mantenimiento"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/datos_plano_fragment" />
+
+
+</RelativeLayout>

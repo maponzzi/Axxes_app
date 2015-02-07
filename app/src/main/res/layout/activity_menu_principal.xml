@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MenuPrincipal">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_logo"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/app_giro"
+        android:id="@+id/text_main"
+        android:textSize="28dp"
+        android:layout_below="@+id/image_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Levantamiento"
+        android:id="@+id/button_lev"
+        android:layout_below="@+id/text_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Requerimiento"
+        android:id="@+id/button_req"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/button_lev"
+        android:elevation="4dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Mensajes"
+        android:id="@+id/butto_msj"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/button_req"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_dark"
+        android:layout_marginBottom="0dp"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/user_footer"
+            android:textColor="@color/text_footer"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/image_logo" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
